@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azzunique</title>
+    <link rel="icon" href="../assets/AzzuniqueLogo.png">
+    <link rel="stylesheet" href="../css/topbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="topbar">
+
+  <!-- Mobile Menu Button -->
+  <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="top-right">
+
+    <!-- Notification -->
+    <div class="icon-wrapper" id="notificationBtn">
+      <i class="fas fa-bell"></i>
+      <span class="badge">3</span>
+
+      <div class="dropdown" id="notificationDropdown">
+        <p class="dropdown-title">Notifications</p>
+        <div class="divider"></div>
+        <p>New payment received</p>
+        <p>Profile updated successfully</p>
+        <p>Server backup completed</p>
+      </div>
+    </div>
+
+    <!-- Profile -->
+    <div class="profile-wrapper" id="profileBtn">
+      <img src="https://i.pravatar.cc/40" alt="profile" class="profile-img">
+
+      <div class="dropdown" id="profileDropdown">
+        <p><a href="javascript:void(0)" class="nav-link" data-page="userProfile">My Profile</a></p>
+        <div class="divider"></div>
+        <p><a href="javascript:void(0)" class="nav-link" data-page="signIn">Logout</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="../javascript/topbar.js"></script>
+
+</body>
+</html>

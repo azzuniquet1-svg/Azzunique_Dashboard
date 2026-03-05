@@ -1,0 +1,48 @@
+
+        <!-- ================= PAGE CONTENT ================= -->
+        <div class="container">
+
+            <!-- RECHARGE CARD -->
+            <div class="card recharge-card">
+                <h2><i class="fa-solid fa-mobile-screen"></i> Mobile Recharge</h2>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" placeholder="Enter 10 digit mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label for="operator">Select Operator</label>
+                    <select id="operator">
+                        <option value="">-- Select Operator --</option>
+                        <option value="Jio">Jio</option>
+                        <option value="Airtel">Airtel</option>
+                        <option value="Vi">Vi</option>
+                        <option value="BSNL">BSNL</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Recharge Amount</label>
+                    <input type="number" id="amount" placeholder="Enter Amount">
+                </div>
+
+                <button class="btn" onclick="rechargeNow()">
+                    <i class="fa-solid fa-bolt"></i> Recharge Now
+                </button>
+            </div>
+
+            <!-- SUCCESS CARD -->
+            <div class="card result-card" id="resultCard" style="display:none;">
+                <div class="result-box">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <h3>Recharge Successful</h3>
+                        <p id="rechargeDetails"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    

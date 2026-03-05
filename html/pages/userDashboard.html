@@ -1,0 +1,92 @@
+<div class="user-dashboard">
+
+<!-- ================= PROFILE ================= -->
+
+<div class="profile-card">
+  <img src="/assets/Bank_img.jpg" alt="User">
+  <div class="profile-info">
+    <h3 id="udName">Username</h3>
+    <p id="udUsername" class="muted">@username</p>
+    <p id="udEmail" class="muted">email@example.com</p>
+  </div>
+</div>
+
+<!-- ================= STATS ================= -->
+
+<div class="stats-grid">
+
+  <div class="stats-card wallet">
+    <div class="stats-icon icon-blue">
+      <i class="fa-solid fa-wallet"></i>
+    </div>
+    <div class="stats-info">
+      <h5>Wallet Balance</h5>
+      <h2 id="walletBalance">₹0</h2>
+      <span>Available Balance</span>
+    </div>
+  </div>
+
+  <div class="stats-card profit">
+    <div class="stats-icon icon-green">
+      <i class="fa-solid fa-chart-line"></i>
+    </div>
+    <div class="stats-info">
+      <h5>Today's Profit</h5>
+      <h2 id="todayProfit">₹0</h2>
+      <span>Today's Earnings</span>
+    </div>
+  </div>
+
+  <div class="stats-card package">
+    <div class="stats-icon icon-orange">
+      <i class="fa-solid fa-box"></i>
+    </div>
+    <div class="stats-info">
+      <h5>Package</h5>
+      <h2 id="userPackage">Starter</h2>
+      <span>Active Plan</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= SERVICE SUMMARY ================= -->
+
+
+
+<div class="services-top">
+  <div id="servicesGrid" class="services-grid" aria-live="polite">
+    <!-- service cards injected by JS -->
+  </div>
+  <div class="view-more-wrap">
+    <button id="viewMoreBtn" class="view-more" type="button" onclick="window.toggleDashboardServices && window.toggleDashboardServices()">View More ▾</button>
+  </div>
+</div>
+
+<!-- ================= TRANSACTIONS ================= -->
+
+<div class="table-wrapper">
+
+<h3>Recent Transactions</h3>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Type</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+</thead>
+
+<tbody id="transactionTable">
+<tr>
+<td colspan="4">No transactions available</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+</div>

@@ -1,0 +1,115 @@
+        <div class="transfer-wrapper">
+
+            <div class="transfer-left">
+
+                <div class="transfer-card">
+
+        <div class="card-header">
+            <div class="icon-circle">
+                <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h2>Quick Transfer</h2>
+        </div>
+
+        <form id="transferForm">
+
+            <!-- Account Number -->
+            <div class="form-group">
+                <label>Account Number</label>
+                <div class="input-box">
+                    <input type="text" id="accountNo" placeholder="Enter Account Number">
+                </div>
+            </div>
+
+            <!-- IFSC -->
+            <div class="form-group">
+                <label>IFSC Code</label>
+                <div class="input-box">
+                    <input type="text" id="ifsc" placeholder="Enter IFSC Code">
+                </div>
+            </div>
+
+            <!-- Beneficiary -->
+            <div class="form-group">
+                <label>Beneficiary Name</label>
+                <div class="input-box">
+                    <input type="text" id="beneficiary" placeholder="Enter Beneficiary Name">
+                </div>
+            </div>
+
+            <!-- Amount -->
+            <div class="form-group">
+                <label>Amount</label>
+                <div class="input-box">
+                    <input type="number" id="amount" placeholder="Enter Amount">
+                </div>
+            </div>
+
+            <!-- Confirm -->
+            <div class="confirm-box">
+                <input type="checkbox" id="confirm">
+                <label for="confirm">Confirm Transaction</label>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="transfer-btn">
+                <i class="fa-solid fa-bolt"></i> Transfer
+            </button>
+
+            <p class="error-msg" id="errorMsg"></p>
+
+                </form>
+
+                </div>
+
+            </div>
+
+            <!-- Accounts panel: select account associated with this number -->
+            <aside class="accounts-panel">
+                <div class="accounts-header">
+                    <h3>Select account associated with this number</h3>
+                </div>
+
+                <div class="accounts-list">
+                    <div class="account-card">
+                        <div class="account-info">
+                            <div><strong>Account:-</strong> 34621114524</div>
+                            <div><strong>IFSC:-</strong> SBIN0000001</div>
+                            <div class="acc-name">MR DURGESH KUMAR MAHTO</div>
+                        </div>
+                        <div class="account-actions">
+                            <button class="verify-btn"><i class="fa fa-check-square"></i> Verify</button>
+                            <button class="delete-btn"><i class="fa fa-trash"></i> Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="account-card">
+                        <div class="account-info">
+                            <div><strong>Account:-</strong> 674801512466</div>
+                            <div><strong>IFSC:-</strong> ICIC0000011</div>
+                            <div class="acc-name">DURGESH KUMAR MAHTO</div>
+                        </div>
+                        <div class="account-actions">
+                            <button class="verify-btn"><i class="fa fa-check-square"></i> Verify</button>
+                            <button class="delete-btn"><i class="fa fa-trash"></i> Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="account-card">
+                        <div class="account-info">
+                            <div><strong>Account:-</strong> 06618100000795</div>
+                            <div><strong>IFSC:-</strong> BARB0KISAJM</div>
+                            <div class="acc-name">SAMIR AKHTAR SO IRFAN AKHTAR</div>
+                        </div>
+                        <div class="account-actions">
+                            <button class="verify-btn"><i class="fa fa-check-square"></i> Verify</button>
+                            <button class="delete-btn"><i class="fa fa-trash"></i> Delete</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+    

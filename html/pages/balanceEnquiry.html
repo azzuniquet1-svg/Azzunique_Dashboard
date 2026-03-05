@@ -1,0 +1,34 @@
+<!-- Page Content -->
+<div class="page-content">
+
+            <div class="container">
+
+                <!-- BALANCE ENQUIRY CARD -->
+                <div class="card enquiry-card">
+                    <h2><i class="fa-solid fa-wallet"></i> Balance Enquiry</h2>
+
+                    <div class="form-group">
+                        <label for="accountNumber">Account Number</label>
+                        <input type="text" id="accountNumber" placeholder="Enter Account Number">
+                    </div>
+
+                    <button class="btn" onclick="checkBalance()">
+                        <i class="fa fa-search"></i> Check Balance
+                    </button>
+                </div>
+
+                <!-- RESULT CARD -->
+                <div class="card result-card" id="resultCard" style="display:none;">
+                    <div class="balance-box">
+                        <i class="fa-solid fa-coins"></i>
+                        <div>
+                            <p>Available Balance</p>
+                            <h3 id="balanceAmount">₹ 0</h3>
+                            <small id="updatedTime"></small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+</div>

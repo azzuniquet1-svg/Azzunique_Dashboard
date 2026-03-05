@@ -1,0 +1,134 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6fa;
+    /* padding: 20px; */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= HEADING ================= */
+.card h2 {
+    font-size: 25px;
+    color: #1d7af3;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ================= FORM ================= */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e0e6ed;
+    background: #f9fbfd;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background: #fff;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    background: linear-gradient(45deg, #1d7af3, #4da3ff);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    width: 25%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ================= RESULT BOX ================= */
+.result-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(45deg, #1d7af3, #4da3ff);
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.result-box i {
+    font-size: 32px;
+}
+
+.result-box h3 {
+    margin-bottom: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:768px){
+
+  .users-wrapper{
+    padding:20px;
+  }
+
+  .page-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+
+  .add-user-btn{
+    align-self:flex-end;
+  }
+  .btn{
+    width: 35%;
+  }
+
+}

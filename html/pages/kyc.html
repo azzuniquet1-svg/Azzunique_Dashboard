@@ -1,0 +1,135 @@
+
+  <!-- Content -->
+  <div class="content">
+
+    <div class="kyc-card">
+
+      <div class="card-header">
+        <h2>KYC Verification</h2>
+        <p>Please fill in accurate details for verification</p>
+      </div>
+
+      <form action="submit_kyc.php" method="POST" enctype="multipart/form-data">
+
+  <!-- Personal Information -->
+  <div class="section-title">Personal Information</div>
+  <div class="grid">
+    <div class="input-group">
+      <label for="full_name">Full Name</label>
+      <input type="text" id="full_name" name="full_name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="father_name">Father's Name</label>
+      <input type="text" id="father_name" name="father_name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="input-group">
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" maxlength="10" required>
+    </div>
+  </div>
+
+  <!-- Address Details -->
+  <div class="section-title">Address Details</div>
+  <div class="grid">
+    <div class="input-group">
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="input-group">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required>
+    </div>
+
+    <div class="input-group">
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required>
+    </div>
+
+    <div class="input-group">
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" maxlength="6" required>
+    </div>
+  </div>
+
+  <!-- Bank Details -->
+  <div class="section-title">Bank Details</div>
+  <div class="grid">
+    <div class="input-group">
+      <label for="bank_bene_name">Bank Bene Name</label>
+      <input type="text" id="bank_bene_name" name="bank_bene_name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="bank_name">Bank Name</label>
+      <input type="text" id="bank_name" name="bank_name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="account_number">Account Number</label>
+      <input type="text" id="account_number" name="account_number" required>
+    </div>
+
+    <div class="input-group">
+      <label for="ifsc">IFSC Code</label>
+      <input type="text" id="ifsc" name="ifsc" required>
+    </div>
+  </div>
+
+  <!-- Documents Upload -->
+  <div class="section-title">Documents Upload</div>
+  <div class="grid">
+    <div class="input-group">
+      <label for="aadhaar_number">Aadhaar Number</label>
+      <input type="text" id="aadhaar_number" name="aadhaar_number" maxlength="12" required>
+    </div>
+
+    <div class="input-group">
+      <label for="aadhaar_front">Aadhaar Front</label>
+      <input type="file" id="aadhaar_front" name="aadhaar_front" required>
+    </div>
+
+    <div class="input-group">
+      <label for="aadhaar_back">Aadhaar Back</label>
+      <input type="file" id="aadhaar_back" name="aadhaar_back" required>
+    </div>
+
+    <div class="input-group">
+      <label for="pan_number">PAN Number</label>
+      <input type="text" id="pan_number" name="pan_number" required>
+    </div>
+
+    <div class="input-group">
+      <label for="pan_image">PAN Image</label>
+      <input type="file" id="pan_image" name="pan_image" required>
+    </div>
+
+    <div class="input-group">
+      <label for="business_name">Business Name</label>
+      <input type="text" id="business_name" name="business_name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="personal_photo">Personal Photo</label>
+      <input type="file" id="personal_photo" name="personal_photo" required>
+    </div>
+  </div>
+
+  <div class="btn-wrapper">
+    <button type="submit" class="submit-btn">Submit KYC</button>
+  </div>
+
+</form>
+
+
+    </div>
+
+  </div>
+

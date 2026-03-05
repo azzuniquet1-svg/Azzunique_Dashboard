@@ -1,0 +1,193 @@
+/* ================= GLOBAL ================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+
+}
+
+/* ================= WRAPPER ================= */
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding: 40px;
+}
+
+/* ================= CARD ================= */
+
+.form-card{
+  background:#fff;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  position:relative;
+}
+
+/* Top Accent */
+.form-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:4px;
+  /* background:#1d7af3; */
+  border-radius:12px 12px 0 0;
+}
+
+/* ================= HEADER ================= */
+
+.form-card h2{
+  font-size:22px;
+  margin-bottom:30px;
+  color:#2c3e50;
+  display:flex;
+  align-items:center;
+  text-align: center;
+  gap:10px;
+}
+
+.form-card h2 i{
+  color:#1d7af3;
+}
+
+/* ================= FORM GRID ================= */
+
+#addUserForm{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+/* Full Width Field */
+.form-group.full{
+  grid-column:1/-1;
+}
+
+/* ================= INPUT GROUP ================= */
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group label{
+  font-size:15px;
+  margin-bottom:6px;
+  font-weight:500;
+  color:#555;
+}
+
+.input-box{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+
+.input-box i{
+  position:absolute;
+  left:12px;
+  font-size:13px;
+  color:#818283;
+}
+
+.input-box input,
+.input-box select{
+  width:100%;
+  padding:12px 14px;
+  border:1px solid #e0e6ed;
+  border-radius:8px;
+  font-size:14px;
+  background:#f9fbfd;
+  transition:0.3s ease;
+}
+
+.input-box input{
+  padding-left:14px;
+}
+
+.input-box i + input{
+  padding-left:35px;
+}
+
+/* Hover & Focus */
+
+.input-box input:hover,
+.input-box select:hover{
+  border-color:#1d7af3;
+}
+
+.input-box input:focus,
+.input-box select:focus{
+  background:#fff;
+  border-color:#1d7af3;
+  outline:none;
+  box-shadow:0 0 0 3px rgba(29,122,243,0.1);
+}
+
+/* ================= CHECKBOX ================= */
+
+.checkbox-group{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  color:#555;
+}
+
+.checkbox-group input{
+  accent-color:#1d7af3;
+}
+
+/* ================= BUTTON ================= */
+
+.submit-btn{
+  width: 25%;
+  background:linear-gradient(45deg,#1d7af3,#4da3ff);
+  color:#fff;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  justify-content:center;
+}
+
+.submit-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(29,122,243,0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+  .users-wrapper{
+    padding:20px;
+  }
+
+  .page-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+
+  .add-user-btn{
+    align-self:flex-end;
+  }
+  .submit-btn{
+    width: 40%;
+  }
+
+}

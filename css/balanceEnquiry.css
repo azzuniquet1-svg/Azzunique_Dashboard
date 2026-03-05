@@ -1,0 +1,136 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6fa;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= HEADING ================= */
+.card h2 {
+    font-size: 22px;
+    color: #1d7af3;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ================= FORM ================= */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.form-group input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e0e6ed;
+    background: #f9fbfd;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #1d7af3;
+    background: #fff;
+    box-shadow: 0 0 0 2px rgba(29, 122, 243, 0.1);
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    background: linear-gradient(45deg, #1d7af3, #4da3ff);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    width: 40%;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(29, 122, 243, 0.3);
+}
+
+/* ================= BALANCE BOX ================= */
+.balance-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(45deg, #1d7af3, #4da3ff);
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.balance-box i {
+    font-size: 32px;
+}
+
+.balance-box p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.balance-box h3 {
+    font-size: 26px;
+    margin-top: 5px;
+}
+
+.balance-box small {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .btn {
+        width: 50%;
+    }
+
+    .balance-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

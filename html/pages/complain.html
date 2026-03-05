@@ -1,0 +1,58 @@
+
+
+
+<div class="container">
+
+            <!-- Raise Complaint Card -->
+            <div class="card">
+                <h2><i class="fa-solid fa-user"></i> Raise New Complaint</h2>
+                <hr>
+
+                <label for="service">Service</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-clock"></i>
+                    <select id="service">
+                        <option value="">Select Service</option>
+                        <option>Money Transfer</option>
+                        <option>KYC Registration</option>
+                        <option>Account Issue</option>
+                    </select>
+                </div>
+
+        <label for="input-bx">Transaction ID</label>
+        <div class="input-box">
+            <i class="fa-solid fa-receipt"></i>
+            <input type="text" id="transactionId" placeholder="Transaction ID">
+        </div>
+
+        <label for="message ">Message</label>
+        <textarea id="message" placeholder="Your message"></textarea>
+
+        <button onclick="raiseComplaint()" id="input-bx">Raise Complaint</button>
+    </div>
+
+    <!-- History Card -->
+    <div class="card history-card">
+        <h2><i class="fa-solid fa-clock-rotate-left"></i> History</h2>
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Type</th>
+                    <th>Ref ID</th>
+                    <th>Msg</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="historyTable">
+            </tbody>
+        </table>
+    </div>
+
+        </div>
+    
+
+
+    

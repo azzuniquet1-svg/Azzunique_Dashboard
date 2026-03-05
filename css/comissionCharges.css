@@ -1,0 +1,139 @@
+/* ===== RESET BODY ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #d1d5db;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px; /* same as sidebar width */
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+/* ===== TOPBAR FIX ===== */
+#topbar-container {
+  margin: 0;          /* remove extra gap */
+  padding: 0;         /* remove extra gap */
+}
+
+/* ===== PAGE INNER CONTENT WRAPPER ===== */
+.page-content {
+  padding: 20px;      /* spacing only for page content */
+  box-sizing: border-box;
+}
+
+/* ===== COMMISSION WRAPPER ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ===== CARD BASE ===== */
+.commission-card {
+  border-radius: 12px;
+  padding: 30px 20px;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.commission-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ICONS */
+.commission-card h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.commission-card h3 i {
+  font-size: 34px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 18px;
+  border-radius: 50%;
+}
+
+/* TABLE */
+.table-wrapper {
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+th, td {
+  padding: 8px;
+  font-size: 13px;
+}
+
+th {
+  opacity: 0.9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* CARD COLORS */
+.commission-card:nth-child(1) { background: #f39c12; }
+.commission-card:nth-child(2) { background: #3d8ec9; }
+.commission-card:nth-child(3) { background: #259d84; }
+.commission-card:nth-child(4) { background: #e91e63; }
+.commission-card:nth-child(5) { background: #8e44ad; }
+.commission-card:nth-child(6) { background: #17a2b8; }
+.commission-card:nth-child(7) { background: #e74c3c; }
+.commission-card:nth-child(8) { background: #3f5368; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+
+  .commission-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .commission-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,143 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* IMPORTANT: Do NOT touch layout structure */
+body {
+    background: #f0f3f8;
+}
+
+/* ================= AEPS CONTAINER ================= */
+.aeps-container {
+    width: 100%;
+    padding: 30px; /* spacing inside main */
+}
+
+/* ================= AEPS CARD ================= */
+.aeps-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: transform 0.3s ease;
+}
+
+.aeps-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= NOTICE BOX ================= */
+.notice-box {
+    background: linear-gradient(90deg, #ffddc1, #ffc1c1);
+    padding: 20px;
+    border-radius: 12px;
+    color: #5a3e36;
+}
+
+.notice-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notice-box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ================= INFO GRID ================= */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    background: #f9fafc;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dedfe0;
+}
+
+.info-item i {
+    font-size: 20px;
+    color: #1d7af3;
+}
+
+.info-item span {
+    font-size: 14px;
+    color: #333;
+    word-break: break-all;
+}
+
+.info-item:hover {
+    background: #eef6ff;
+}
+
+/* ================= KYC BUTTON ================= */
+.kyc-btn {
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.kyc-btn button {
+    background: linear-gradient(45deg, #1d7af3, #4da3ff);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 20%;
+    transition: all 0.3s ease;
+}
+
+.kyc-btn button:hover {
+    opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px) {
+
+    .aeps-container {
+        padding: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .notice-box {
+        font-size: 13px;
+    }
+    .kyc-btn button{
+        width: 50%;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kyc-btn button{
+        width: 70%;
+    }
+}

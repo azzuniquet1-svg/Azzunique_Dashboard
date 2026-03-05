@@ -1,0 +1,166 @@
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+  background:#f1f3f6;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+
+/* ===== LOGO ===== */
+.logo-img{
+  margin-bottom:20px;
+}
+
+.logo-img img{
+  width:200px;
+  height: 80px;
+}
+
+/* ===== LOGIN WRAPPER ===== */
+.login-wrapper{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ===== CARD ===== */
+.login-card{
+  width:380px;
+  background:#ffffff;
+  padding:35px 30px;
+  border-radius:16px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.06);
+}
+
+/* ===== FORM GROUP ===== */
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:20px;
+}
+
+.form-group label{
+  margin-bottom:6px;
+  font-size:14px;
+  font-weight:600;
+  color:#444;
+}
+
+/* ===== INPUT ===== */
+.form-group input[type="text"],
+.form-group input[type="password"]{
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  background:#f9fafb;
+  font-size:14px;
+  outline:none;
+  transition:0.3s;
+}
+
+.form-group input:focus{
+  background:#fff;
+}
+
+/* ===== PASSWORD TOGGLE ===== */
+.password-group{
+  position:relative;
+}
+
+.toggle-password{
+  position:absolute;
+  right:15px;
+  top:38px;
+  cursor:pointer;
+  font-size:12px;
+  color:#6b7280;
+  transition:0.3s;
+}
+
+.toggle-password:hover{
+  color:#2563eb;
+}
+
+/* ===== OPTIONS ===== */
+.options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+  font-size:13px;
+}
+
+.remember{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:#444;
+}
+
+.remember input{
+  accent-color:#2563eb;
+}
+
+.forgot{
+  text-decoration:none;
+  color:#2563eb;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.forgot:hover{
+  text-decoration:underline;
+}
+
+/* ===== PRIMARY BUTTON ===== */
+.btn-primary{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#2563eb,#1d4ed8);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+  margin-bottom:15px;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 15px rgba(37,99,235,0.3);
+}
+
+/* ===== SECONDARY BUTTON ===== */
+.btn-secondary{
+  width:100%;
+  padding:11px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  background:#ffffff;
+  font-weight:500;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-secondary:hover{
+  background:#f3f4f6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:480px){
+  .login-card{
+    width:90%;
+  }
+}

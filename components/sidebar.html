@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="sidebar">
+
+  <div class="logo">
+    <img src="../assets/AzzuniqueLogo.png" alt="">
+  </div>
+
+  <div class="sidebar-divider" aria-hidden="true"></div>
+
+  <ul class="menu">
+
+    <li class="menu-item">
+      <a href="javascript:void(0)" class="nav-link menu-link" data-page="dashboard">
+        <i class="fa fa-gauge"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="javascript:void(0)" class="nav-link menu-link" data-page="comissionCharges">
+        <i class="fa fa-cash-register"></i>
+        <span>Commission & Charges</span>
+      </a>
+
+      <a href="javascript:void(0)" class="nav-link menu-link" data-page="kyc">
+        <i class="fa fa-sign-in"></i>
+        <span>Kyc Verification</span>
+      </a>
+    </li>
+
+    <li class="menu-item has-dropdown">
+      <div class="menu-link" onclick="toggleMenu(this)">
+        <i class="fa fa-users"></i>
+        <span>Users</span>
+        <i class="fa fa-chevron-down arrow"></i>
+      </div>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)" class="nav-link" data-page="users">All Users</a></li>
+      </ul>
+    </li>
+
+    <li class="menu-item has-dropdown">
+      <div class="menu-link" onclick="toggleMenu(this)">
+        <i class="fa fa-briefcase"></i>
+        <span>Services</span>
+        <i class="fa fa-chevron-down arrow"></i>
+      </div>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)" class="nav-link" data-page="recharge">Recharge</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="AEPS">AEPS</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="moneyTransfer">Money Transfer</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="quickTransfer">Quick Transfer</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="payout">Payout</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="balanceEnquiry">Balance Enquiry</a></li>
+      </ul>
+    </li>
+
+    <li class="menu-item has-dropdown">
+      <div class="menu-link" onclick="toggleMenu(this)">
+        <i class="fa fa-circle-question"></i>
+        <span>Help</span>
+        <i class="fa fa-chevron-down arrow"></i>
+      </div>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)" class="nav-link" data-page="fundRequest">Fund Request</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="walletTransfer">Wallet Transfer</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="complain">Complain / Report</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="support">Support</a></li>
+      </ul>
+    </li>
+
+    <li class="menu-item has-dropdown">
+      <div class="menu-link" onclick="toggleMenu(this)">
+        <i class="fa fa-clock"></i>
+        <span>History</span>
+        <i class="fa fa-chevron-down arrow"></i>
+      </div>
+      <ul class="submenu">
+        <li><a href="javascript:void(0)" class="nav-link" data-page="history">Money Transfer</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="history">Quick Transfer</a></li>
+        <li><a href="javascript:void(0)" class="nav-link" data-page="miniStatement">Mini Statement</a></li>
+      </ul>
+    </li>
+
+    
+
+  </ul>
+  
+  <div class="sidebar-footer">
+    <div class="sidebar-divider" aria-hidden="true"></div>
+    <div class="logout-wrap">
+      <a href="javascript:void(0)" class="nav-link logout-link" data-page="signIn">
+        <i class="fa fa-sign-out-alt"></i>
+        <span>Logout</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+</body>
+</html>

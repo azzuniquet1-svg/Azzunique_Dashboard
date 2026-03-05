@@ -1,0 +1,236 @@
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* DO NOT use flex on body when using sidebar layout */
+body {
+    background: #f0f3f8;
+    min-height: 100vh;
+}
+
+/* ================= MAIN LAYOUT FIX ================= */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Page content area under topbar */
+.transfer-wrapper {
+    padding: 40px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================= TRANSFER CARD ================= */
+.transfer-left{width:360px;flex:0 0 360px}
+.transfer-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(2,6,23,0.06);
+    padding: 28px 22px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: transform 0.25s ease;
+}
+
+.transfer-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= CARD HEADER ================= */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg,#1d7af3,#4da3ff);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.card-header h2 {
+    color: #0b57d0;
+    font-size: 20px;
+    margin:0;
+}
+
+/* ================= FORM GROUP ================= */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-box {
+    background: #f9fbfd;
+    border: 1px solid #e9eef4;
+    border-radius: 12px;
+    padding: 12px 14px;
+    transition: 0.18s ease;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.input-box:hover {
+    border-color: #1d7af3;
+}
+
+.input-box:focus-within {
+    border-color: #1d7af3;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(29, 122, 243, 0.1);
+}
+
+/* ================= CONFIRM BOX ================= */
+.confirm-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.confirm-box input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #1d7af3;
+}
+
+.confirm-box label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ================= TRANSFER BUTTON ================= */
+.transfer-btn {
+    background: linear-gradient(135deg,#1d7af3,#3aa0ff);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow:0 8px 18px rgba(29,122,243,0.12);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.transfer-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.error-msg {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px) {
+
+    .transfer-wrapper {
+        padding: 20px;
+    }
+
+    .transfer-card {
+        padding: 25px 20px;
+    }
+
+    .card-header h2 {
+        font-size: 18px;
+    }
+
+    .icon-circle {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* ================= ACCOUNTS PANEL (right column) ================= */
+.accounts-panel{
+    width:460px;
+    max-width:460px;
+    background:#fff;
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 18px 40px rgba(2,6,23,0.06);
+}
+
+.accounts-header h3{font-size:16px;color:#1f2937;margin:0 0 8px}
+
+.accounts-list{display:flex;flex-direction:column;gap:12px}
+
+.account-card{background:#00d1a0; /* green-turquoise */
+    color:#04202a;
+    padding:14px 16px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.account-info{font-size:13px}
+.account-info .acc-name{margin-top:6px;font-weight:600}
+
+.account-actions{display:flex;gap:8px;align-items:center}
+.verify-btn{
+    background:#04162a;color:#fff;border:none;padding:10px 14px;border-radius:22px;cursor:pointer;font-weight:700;display:flex;align-items:center;gap:8px
+}
+.delete-btn{background:#ff8a80;color:#fff;border:none;padding:8px 12px;border-radius:12px;cursor:pointer}
+
+@media(max-width:1024px){
+    .accounts-panel{width:360px;max-width:360px}
+}
+
+@media(max-width:900px){
+    .transfer-wrapper{flex-direction:column;align-items:stretch}
+    .accounts-panel{width:100%;max-width:100%}
+}

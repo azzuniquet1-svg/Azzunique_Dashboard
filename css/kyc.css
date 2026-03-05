@@ -1,0 +1,142 @@
+
+
+/* ================= GLOBAL ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  /* display:flex; */
+  background:#f4f6f9;
+}
+
+/* ================= MAIN ================= */
+.main{
+  margin-left:250px;
+  width:calc(100% - 250px);
+  min-height:100vh;
+}
+
+/* ================= CONTENT ================= */
+.content{
+  padding:30px;
+}
+
+/* ================= KYC CARD ================= */
+.kyc-card{
+  background:#fff;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  max-width:1200px;
+  margin:auto;
+}
+
+.card-header h2{
+  font-size:22px;
+  margin-bottom:5px;
+  color:#2c3e50;
+}
+
+.card-header p{
+  font-size:14px;
+  color:#888;
+  margin-bottom:25px;
+}
+
+.section-title{
+  font-size:15px;
+  font-weight:600;
+  margin:30px 0 15px;
+  padding-left:10px;
+  border-left:4px solid #1d7af3;
+  color:#1d7af3;
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  font-size:13px;
+  margin-bottom:6px;
+  font-weight:500;
+  color:#555;
+}
+
+.input-group input{
+  padding:12px 14px;
+  border:1px solid #e0e6ed;
+  border-radius:8px;
+  font-size:14px;
+  background:#f9fbfd;
+  transition:0.3s ease;
+}
+
+/* .input-group input:hover{
+  border-color:#1d7af3;
+} */
+
+.input-group input:focus{
+  background:#fff;
+  outline:none;
+
+}
+
+/* Button */
+.btn-wrapper{
+  margin-top:40px;
+  text-align:right;
+}
+
+.submit-btn{
+  background:linear-gradient(45deg,#1d7af3,#4da3ff);
+  color:#fff;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.submit-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(29,122,243,0.3);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+  .sidebar{
+    position: fixed;
+    left: -260px; /* hide outside */
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    transition: 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.active{
+    left: 0; /* slide in */
+  }
+
+  .main{
+    margin-left: 0;
+    width: 100%;
+  }
+
+}
+

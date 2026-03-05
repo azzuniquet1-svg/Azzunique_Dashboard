@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azzunique</title>
+
+  <link rel="stylesheet" href="../css/signIn.css" />
+  <link rel="icon" href="../assests/AzzuniqueLogo.png">
+</head>
+<body>
+<div class="logo-img">
+        <img src="../assets/AzzuniqueLogo.png" alt="Logo">
+</div>
+<div class="login-wrapper">
+  
+  <div class="login-card">
+
+    <form method="POST" action="https://reseller.developermode.online/user/login">
+      <input type="hidden" name="_token" value="adpLrYBnaL9964maAyXh3jTksXOe4wmqfuwCeBTm">
+
+      <!-- Username -->
+      <div class="form-group">
+        <label>Email or User ID</label>
+        <input 
+          type="text" 
+          name="username"
+          placeholder="Enter your username"
+          required
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group password-group">
+        <label>Password</label>
+        <input 
+          type="password" 
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+        <span class="toggle-password" onclick="togglePassword()">●●●</span>
+      </div>
+
+      <!-- Remember / Forgot -->
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox" checked />
+          Remember ID
+        </label>
+
+        <a 
+          href="../html/forgetPass.html"
+          class="forgot"
+        >
+          Forgot password?
+        </a>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn-primary">
+        Sign in
+      </button>
+
+    </form>
+
+    <!-- Secondary Action -->
+    <button class="btn-secondary">
+      Sign in with Google
+    </button>
+
+    
+
+  </div>
+</div>
+
+<script src="../javascript/signIn.js"></script>
+
+</body>
+</html>

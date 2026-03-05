@@ -1,0 +1,84 @@
+<div class="container"> 
+
+            <div class="top-section">
+
+        <!-- Wallet Transfer Card -->
+        <div class="card transfer-card">
+            <div class="balance-box">
+                <i class="fa-solid fa-wallet"></i>
+                <div>
+                    <p>Available Balance</p>
+                    <h3>₹0</h3>
+                </div>
+            </div>
+
+            <form id="transferForm">
+
+                <div class="form-group">
+                    <label for="select-user">Select User</label>
+                    <select id="select-user" required>
+                        <option value="">Select User</option>
+                        <option>MD37100 | Tahir Khan</option>
+                        <option>MD37101 | Rahul Sharma</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Amount</label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <input type="number" placeholder="Enter Amount" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i> Transfer
+                </button>
+
+            </form>
+        </div>
+
+        <!-- History Card -->
+        <div class="card history-card">
+            <h2><i class="fa-solid fa-clock-rotate-left"></i> Transfer History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Txn ID</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>RRN</th>
+                        <th>Mobile</th>
+                        <th>Aadhaar</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable">
+                    <tr>
+                        <td>TXN2345</td>
+                        <td>₹5,000</td>
+                        <td><span class="badge success">Success</span></td>
+                        <td>4455667788</td>
+                        <td>9876543210</td>
+                        <td>XXXX-XXXX-1234</td>
+                        <td>13-02-2026</td>
+                    </tr>
+                    <tr>
+                        <td>TXN2346</td>
+                        <td>₹3,000</td>
+                        <td><span class="badge pending">Pending</span></td>
+                        <td>1122334455</td>
+                        <td>9123456789</td>
+                        <td>XXXX-XXXX-9876</td>
+                        <td>12-02-2026</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+

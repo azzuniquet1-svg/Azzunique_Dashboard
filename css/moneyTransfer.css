@@ -1,0 +1,146 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* IMPORTANT: Do NOT control layout here */
+body {
+    background: #f0f3f8;
+}
+
+/* ================= PAGE CONTAINER ================= */
+.money-transfer-container {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= LOGIN CARD ================= */
+.login-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= HEADER ================= */
+.login-card h2 {
+    color: #1d7af3;
+    font-size: 22px;
+    text-align: center;
+}
+
+.login-card p {
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ================= INPUT GROUP ================= */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #f9fbfd;
+    border: 1px solid #e0e6ed;
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: 0.3s ease;
+}
+
+.input-box i {
+    color: #1d7af3;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    flex: 1;
+    padding: 6px 0;
+}
+
+.input-box:hover {
+    border-color: #1d7af3;
+}
+
+.input-box:focus-within {
+    border-color: #1d7af3;
+    box-shadow: 0 0 0 3px rgba(29, 122, 243, 0.1);
+    background: #fff;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.error {
+    color: #ff4d4f;
+    font-size: 12px;
+    display: none;
+}
+
+/* ================= LOGIN BUTTON ================= */
+.login-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-btn button {
+    background: linear-gradient(45deg, #1d7af3, #4da3ff);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.login-btn button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 480px) {
+    .money-transfer-container {
+        padding: 20px 15px;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .input-box i {
+        font-size: 16px;
+    }
+}
